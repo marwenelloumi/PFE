@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aguafina_script</item>
+        <item>@font/arapey</item>
+        <item>@font/bad_script</item>
+        <item>@font/kite_one</item>
+        <item>@font/nothing_you_could_do</item>
+        <item>@font/raleway_thin</item>
+    </array>
+</resources>

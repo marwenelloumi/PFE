@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">kheerMaro</string>
+    <string name="emailhint">Email</string>
+    <string name="passwordHint">mot de passe</string>
+    <string name="arrosage" />
+    <string name="modifier">Modifier votre image</string>
+    <string name="currentPassword">Saisir votre mot de passe actuel</string>
+    <string name="newPassword">Saisir votre nouveau mot de passe</string>
+    <string name="Modifier">Modifier mot de passe</string>
+    <string name="LogOut">déconnection</string>
+    <string name="enregistrer_modification">"enregistrer modification "</string>
+    <string name="annuler">annuler</string>
+    <string name="login">se connecter</string>
+</resources>
