@@ -1,0 +1,70 @@
+
+
+//recevoir tous les utilisateurs 
+GET https://localhost:3000/utilisateurs/
+
+###
+//recevoir un utilisateur à l'aide de son ID passé comme pamarmètre de l'URL
+GET https://localhost:3000/utilisateurs/5e90dfcf29a06931b8639bae
+
+###
+//créer un utilisateur avec le body passé 
+
+POST https://localhost:3000/utilisateurs
+Content-Type: application/json
+
+{
+    "name":"maro",
+    "email":"maroo@gmail.com",
+    "password":"23739230"
+}
+
+###
+//effecer un utilisateur à l'aide de son ID passé comme pamarmètre de l'URL
+DELETE https://localhost:3000/utilisateurs/5e90dfcf29a06931b8639bae
+
+###
+//màj un utilisateur à l'aide de son ID passé comme pamarmètre de l'URL et des paramètres passées en body
+PATCH  https://localhost:3000/utilisateurs/5e90e0f77bc4a33264e98ebf
+Content-Type: application/json
+
+{
+    "password":"marwennn"
+}
+###
+//verifier les donées insérées et retourner un token lors du login
+POST https://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"maroo@gmail.com",
+    "password":"marwennn"
+}
+###
+//envoyer les plantes associées de l'utilisateurs avec token inséré en Authorization Header 
+GET https://localhost:3000/plantes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcm9AZ21haWwuY29tIiwicGFzc3dvcmQiOiIyMzczOTIzMCIsIm5hbWUiOiJtYXJvIiwiaWF0IjoxNTg2NTM5MTU5fQ.CVxnH7JLSICtCeWjygLbVjuENI4myFFye_PKm4bA4lI
+
+###
+///recevoir les donées d'une plante à l'aide de son ID passé comme pamarmètre de l'URL
+GET https://localhost:3000/plantes/5e8fa8833876863198c536e8
+###
+//créer une plante avec le body passé 
+POST https://localhost:3000/plantes
+Content-Type: application/json
+
+{
+    "name":"plante",
+    "userEmail":"maro@gmail.com"
+}
+###
+//effecer un utilisateur à l'aide de son ID passé comme pamarmètre de l'URL
+DELETE https://localhost:3000/plantes/5e8faab90b2a4333b8adf260
+###
+//màj d'une plante à l'aide de son ID passé comme pamarmètre de l'URL et des paramètres passées en body
+PATCH  https://localhost:3000/plantes/5e8fabdd53c4590bc8d7975e
+Content-Type: application/json
+
+{
+    "userEmail":"loumi@gmail.com"
+}
